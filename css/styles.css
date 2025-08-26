@@ -194,3 +194,113 @@ input[type="text"]{
         transform:translateY(0);
     }
 }
+
+
+
+/* Base styles (desktop first, what you already have) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsiveness */
+
+/* Tablet view */
+@media (max-width: 992px) {
+    .img-container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .img-container img {
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+    .info {
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    .verify-info h2 {
+        font-size: 18px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .img-container {
+        display: none; 
+    }
+
+    .info {
+        margin: 20px 10px;
+    }
+
+    .nav-links nav ul {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .verify-info h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .why-verify {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-container .btn,
+    .btn-container .login {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Very small phones  */
+@media (max-width: 480px) {
+    .verify-info h2 {
+        font-size: 14px;
+    }
+
+    .details-info p {
+        font-size: 9px;
+    }
+
+    .extra-info ul {
+        font-size: 9px;
+    }
+
+    input[type="text"] {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .btn-container .btn,
+    .btn-container .login {
+        font-size: 13px;
+        padding: 8px;
+    }
+}

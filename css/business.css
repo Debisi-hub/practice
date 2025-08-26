@@ -1,0 +1,17 @@
+.question{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    border-bottom:1px solid #E4E9EF;
+    padding-bottom: 35px;
+}
+
+.questionBtn .btn{
+    padding:15px 19px;
+    color: #141737;
+    font-weight: bolder;
+}
+
+.form-flex{
+    border-bottom: none;
+}
